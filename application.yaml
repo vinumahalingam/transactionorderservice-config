@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: transactionorderservice
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  # If the Atlas user doesn't have the required cluster permissions, the Mongo health
+  # check can fail with 'not authorized on local' (AtlasError). Disable the Mongo
+  # health health contributor locally to avoid actuator failing. If you can, prefer
+  # granting the Atlas user the required privileges instead of disabling this.
+  health:
+    mongo:
+      enabled: false
+
+logging:
+  level:
+    com:
+      transactionorder: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+  file:
+    name: logs/transactionorder.log
+    path: ./logs
+server:
+  port: 8080
