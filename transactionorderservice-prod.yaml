@@ -1,4 +1,4 @@
 spring:
   mongodb:
-    uri: mongodb+srv://vinumahalingam_db_user:iiubftBSnVAX42pF@cluster0.itg2qos.mongodb.net/
+    uri: mongodb://localhost:27017
     database: TransactionOrders
