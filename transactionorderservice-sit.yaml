@@ -4,5 +4,5 @@ spring:
     database: TransactionOrders
   datasource:
     username: postgres
-    password: India123
-    url: jdbc:postgresql://localhost:5433/postgres/transactionorder
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres/transactionorder
