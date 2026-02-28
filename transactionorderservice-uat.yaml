@@ -2,3 +2,7 @@ spring:
   mongodb:
     uri: mongodb://localhost:27017
     database: TransactionOrders
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres/transactionorder
