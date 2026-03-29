@@ -1,7 +1,4 @@
 spring:
-  mongodb:
-    uri: mongodb://localhost:27017
-    database: CustomerProfiles
   datasource:
     username: postgres
     password: postgres
