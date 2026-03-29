@@ -10,9 +10,6 @@ management:
   endpoint:
     health:
       show-details: always
-  health:
-    mongo:
-      enabled: false
 
 logging:
   level:
