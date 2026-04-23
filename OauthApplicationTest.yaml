@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: OauthApplicationTest
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com:
+      customerprofile: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+  file:
+    name: logs/customerprofile.log
+    path: ./logs
+server:
+  port: 9095
