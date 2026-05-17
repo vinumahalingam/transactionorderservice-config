@@ -7,4 +7,4 @@ spring:
     password: postgres
     url: jdbc:postgresql://localhost:5432/transactionorder
 customerprofile:
-  url: http://localhost:8085/api/customer-profiles
+  url: http://customerprofile-api/api/customer-profiles
