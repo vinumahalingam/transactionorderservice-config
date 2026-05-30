@@ -24,4 +24,4 @@ logging:
     name: logs/transactionorder.log
     path: ./logs
 server:
-  port: 8080
+  port: 8087
